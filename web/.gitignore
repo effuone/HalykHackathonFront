@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Damping draft files
+src/pages/damping/damp.tsx
+src/pages/damping/index.tsx
+src/pages/damping/leaderboard.tsx
+src/pages/damping/price-history.tsx
+src/pages/damping/hover-table.tsx
+src/pages/shell/index.tsx
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

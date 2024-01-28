@@ -1,0 +1,36 @@
+.circular-progress-container {
+    position: relative;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.circular-progress {
+    width: 100%;
+    height: 100%;
+}
+
+.circular-progress-background {
+    stroke: #817d7d;
+}
+
+.circular-progress-bar {
+    stroke: #F0B142;
+    transition: stroke-dashoffset 0.4s ease-out;
+}
+
+.circular-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.circular-progress-subtext {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
