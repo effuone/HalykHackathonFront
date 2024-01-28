@@ -278,7 +278,7 @@ const ApplicationForm: React.FC = () => {
           mt={10}
         >
           <CircularProgress size={50} />
-          <Typography mt={3}>
+          <Typography mt={3} textAlign='center'>
             {randomQuestion}
           </Typography>
         </Box>

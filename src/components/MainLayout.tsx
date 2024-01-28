@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ headerText, children }) => {
   const { user } = useAuth();
 
   if (!user) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/auth" />;
   }
 
   const handleDrawerOpen = () => {
