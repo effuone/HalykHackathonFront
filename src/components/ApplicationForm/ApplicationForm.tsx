@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import {useState} from "react";
@@ -98,9 +104,9 @@ const ApplicationForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const isConnected = useMetaMask();
   const contractAddress = "0x6848ab8A45aDca9DC46Cd148FAAFE9A467Cd93E2"
+
   let web3;
   web3 = new Web3(window.ethereum);
-
   const myContract = new web3.eth.Contract(contractAbi, contractAddress);
 
   const createPolicy = async (premium, duration, amount, condition) => {
