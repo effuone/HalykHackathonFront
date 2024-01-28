@@ -122,7 +122,7 @@ const Sidebar: React.FC<SideBarProps> = ({ headerText, children }) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, color: '#181818', display: { sm: 'none' } }}
           >
             <MenuOutlined style={{ color: 'inherit' }} />
           </IconButton>
